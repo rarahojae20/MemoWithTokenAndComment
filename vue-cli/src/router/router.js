@@ -1,9 +1,10 @@
 import Vue from "vue"
 import Router from "vue-router"
-import Home from "./views/Home"
-import Login from "./views/Login"
-import store from './store'
-import mypage from './views/mypage'
+import Home from "../views/home/Home"
+import Login from "../views/sign/Login"
+import store from '../store'
+import mypage from '../views/home/mypage'
+import Signup from '../views/sign/Signup'
 
 Vue.use(Router)
 //로그인했을경우
@@ -44,6 +45,12 @@ export default new Router({
         name:'login',
         beforeEnter : rejectAuthUser,
         component:Login
+      },
+      {
+        path:'/signup',
+        name:'signup',
+        beforeEnter : rejectAuthUser,
+        component:Signup
       }
     ]
 })

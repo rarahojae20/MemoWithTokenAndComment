@@ -1,11 +1,12 @@
 import Vue from "vue"
 import Vuex from "vuex"
-import router from './router'
+import router from './router/router'
 
 Vue.use(Vuex)
 
 export default new Vuex.Store({
   state:{
+    resetDrawer: false,
     userInfo:null,
     allUsers:[
       {
@@ -25,6 +26,9 @@ export default new Vuex.Store({
     isLoginError:false
   },
   mutations:{
+    setResetDrawer(state, value) {
+      state.resetDrawer = value;
+    },
     // 로그인 성공
     loginSuccess(state,payload){
       state.isLogin=true
