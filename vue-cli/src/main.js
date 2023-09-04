@@ -5,13 +5,19 @@ import router from './router/router'
 import './assets/styles/main.scss'
 import store from './store';
 import '@mdi/font/css/materialdesignicons.css'
+import ElementUI from 'element-ui';
+import locale from 'element-ui/lib/locale/lang/ko'
+import 'element-ui/lib/theme-chalk/index.css';
+
+Vue.use(ElementUI, { locale });
 
 store.commit("initLoginState");
 
 Vue.config.productionTip = false
 
-
 new Vue({
-  vuetify,router,store,
+  vuetify,
+  router,
+  store,
   render: h => h(App)
 }).$mount('#app')

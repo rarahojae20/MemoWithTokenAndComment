@@ -44,7 +44,6 @@
 </template>
 
 <script>
-//  import Vuex from "vuex"
   import {mapState,mapActions} from "vuex"
   const AllUsers =[
       {
@@ -61,7 +60,7 @@
     }
       ]
   export default {
-    name: "Login.vue",
+    name: "Login",
     data(){
       return{
         email:null,

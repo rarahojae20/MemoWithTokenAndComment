@@ -5,6 +5,8 @@ import Login from "../views/sign/Login"
 import store from '../store'
 import mypage from '../views/home/mypage'
 import Signup from '../views/sign/Signup'
+import Write from '../views/mypage/Write'
+import Content from '../views/mypage/Content'
 
 Vue.use(Router)
 //로그인했을경우
@@ -51,6 +53,16 @@ export default new Router({
         name:'signup',
         beforeEnter : rejectAuthUser,
         component:Signup
-      }
+      },
+      {
+        path:'/mypage/write',
+        name:'Write',
+        component:Write
+      },
+      {
+        path:'/mypage/content',
+        name:'Content',
+        component:Content
+      },
     ]
 })
