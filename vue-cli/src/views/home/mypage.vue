@@ -12,11 +12,11 @@
            <v-row>
              <v-col cols="12" md="4"></v-col>
              <v-col cols="12" md="2">
-               <v-btn color="cyan" @click="$router.push('/')"
+               <v-btn color="gray" @click="$router.push('/')"
                       :style="{height:'50px', width:'170px', fontWeight:'bold', fontSize:'large'}">홈으로</v-btn>
              </v-col>
              <v-col cols="12" md="2">
-               <v-btn color="pink accent-1" @click="$router.push('/mypage/write')"
+               <v-btn color="gray" @click="$router.push('/mypage/write')"
                       :style="{height:'50px', width:'170px', fontWeight:'bold', fontSize:'large'}">글작성</v-btn>
              </v-col>
              <v-col cols="12" md="4"></v-col>

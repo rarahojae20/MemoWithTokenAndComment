@@ -1,7 +1,7 @@
-import { LargeNumberLike } from "crypto";
-import addSeconds from "date-fns/addSeconds";
+//import { LargeNumberLike } from "crypto";
+//import addSeconds from "date-fns/addSeconds";
 
-export interface IMemo { 
+export interface IMemo {
     id?: number;
     name?: string;
     title?: string;
