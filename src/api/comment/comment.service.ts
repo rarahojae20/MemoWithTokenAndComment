@@ -1,4 +1,4 @@
-import { IComment } from 'src/types/comments';
+import { IComment } from 'types/comments';
 import CommentRepository from './comment.repository'; // CommentRepository import
 
 export default class CommentService {
@@ -13,4 +13,3 @@ export default class CommentService {
   };
 }
 
-    

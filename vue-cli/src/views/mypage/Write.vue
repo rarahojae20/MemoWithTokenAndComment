@@ -13,10 +13,10 @@
               <v-form ref="form" @submit.prevent="submit" style="padding: 24px">
                 <v-text-field v-model="title" dense outlined label="제목"
                               :rules="[v => !!v || '제목은 필수입니다.']"></v-text-field>
-                <v-textarea v-model="text" label="내용" outlined rows="13" style="width: 1300px;"></v-textarea>
+                <v-textarea v-model="text" label="내용" outlined rows="13" ></v-textarea>
                 <div class="button" style="text-align: right">
-                <v-btn width="100px" style=" margin-bottom:30px;" @click="$router.push('/mypage')">취소</v-btn>
-                <v-btn width="100px" style="margin-left: 30px; margin-bottom:30px;" type="submit">제출</v-btn>
+                <v-btn width="100px" @click="$router.push('/mypage')">취소</v-btn>
+                <v-btn width="100px" style="margin-left: 30px;" type="submit">제출</v-btn>
                 </div>
               </v-form>
             </v-card>
@@ -42,30 +42,20 @@
     },
     methods: {
       submit() {
-        // 작성한 글을 서버에 저장하고, 리스트로 이동하는 코드를 작성합니다.
         const memoData = {
           title: this.title,
           content: this.text,
         };
-//         Axios 또는 다른 HTTP 라이브러리를 사용하여 서버에 데이터를 전송합니다.
-//         예를 들어 Axios를 사용하면 다음과 같이 작성할 수 있습니다.
          axios.post('/api/memos', memoData)
            .then((response) => {
-             // 서버에서 응답을 받았을 때 처리할 로직을 작성합니다.
              console.log("글 작성 완료");
-             this.$router.push('/mypage'); // 작성 후 리스트 페이지로 이동
+             this.$router.push('/mypage');
            })
            .catch((error) => {
-             // 에러 처리 로직을 작성합니다.
              console.error("글 작성 실패:", error);
            });
-
-        // 위의 코드를 Axios 또는 다른 HTTP 라이브러리를 사용하여 서버에 데이터를 저장하는 형태로 변경해주세요.
       },
     },
   }
 </script>
 
-<style scoped>
-
-</style>

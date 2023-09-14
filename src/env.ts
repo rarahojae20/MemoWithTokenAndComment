@@ -1,10 +1,10 @@
-//env.ts 
+//env.ts
 
 import * as dotenv from 'dotenv'; //.env 파일안에있는 환경변수들을 찾아서 테스트하는 라이브러리
 import * as path from 'path';
 import fs from 'fs';
 import appRoot from 'app-root-path';
-import * as pkg from '../../package.json';
+import * as pkg from '../package.json';
 import { getOsEnv, normalizePort, getOsEnvOptional, getOsEnvNumberOptional, getOsEnvNumber } from './lib/utils';
 
 
@@ -48,17 +48,17 @@ const config = { path: path.join(appRoot.path, '.env') };
     }
 })();
 
-dotenv.config(config); //.env.test 파일안에있는 환경변수들을 찾아서nod.js 사용되는 전역변수에 접근할수있게 해서 
+dotenv.config(config); //.env.test 파일안에있는 환경변수들을 찾아서nod.js 사용되는 전역변수에 접근할수있게 해서
 
 
 export const env = {
     mode: {
-        prod: process.env.NODE_ENV?.toLowerCase().includes('prod'), 
+        prod: process.env.NODE_ENV?.toLowerCase().includes('prod'),
         dev: process.env.NODE_ENV?.toLowerCase().includes('dev'),
         test: process.env.NODE_ENV?.toLowerCase().includes('test'),
         value: process.env.NODE_ENV?.toLowerCase(),
     },
-    
+
     mysql: {
         port: getOsEnv('MYSQL_PORT'),
         schema: getOsEnv('MYSQL_SCHEMA'),

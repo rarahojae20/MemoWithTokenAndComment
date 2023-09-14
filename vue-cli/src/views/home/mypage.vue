@@ -54,18 +54,45 @@
 
 <script>
 //  import useRouter from 'vue-router'
-  import {mapState} from "vuex"
+import axios from 'axios'
+import {mapState} from "vuex"
   export default {
     name: "mypage",
     data(){
       return{
 //        useRouter
-        contentlist:[{id:1,title:'test',createdAt:'2021-12-10T12:38:52.000Z'}],
-
+//        contentlist:[{id:1,title:'test',createdAt:'2021-12-10T12:38:52.000Z'}],
+        contentlist: [],
       }
     },
     computed:{
-      ...mapState(["userInfo","isLogin"])
-    }
+      ...mapState(["userInfo","isLogin"]),
+    },
+//    mounted() {	// mounted는 페이지가 켜질때 실행됨, 페이지가 켜질때 글 리스트들을 db에서 불러옴
+//      axios({	// 게시글 작성자, 제목, 작성일 가져오기
+//        url: "http://127.0.0.1:52273/content/boardlist/",
+//        method: "POST",
+//        data: {
+//          // back 서버에 현재 게시판번호와 페이지번호를 넘겨줘야 해당하는 글 리스트 불러올 수 있음
+//          boardnum: this.$route.params.id,
+//          page: this.$route.query.page,
+//        },
+//      }).then(res => {
+//        this.contentlist = res.data;
+//      }).catch(err => {
+//        alert(err);
+//      });
+//      axios({		// 현재 게시판 글 개수 가져오기
+//        url: "http://127.0.0.1:52273/content/boardlistcnt/",
+//        method: "POST",
+//        data: {
+//          boardnum: this.$route.params.id,
+//        },
+//      }).then(res => {
+//        this.cnt = res.data;
+//      }).catch(err => {
+//        alert(err);
+//      });
+//    },
   }
 </script>

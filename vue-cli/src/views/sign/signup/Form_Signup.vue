@@ -37,7 +37,7 @@
             { min: 4, message: "아이디는 최소 4자리 이상이어야 합니다." },
           ],
           checkPass: [
-            { required: true, message: "비밀번호재확인을 입력해주세요.", trigger: "blur" },
+            { required: true, message: "비밀번우리확인을 입력해주세요.", trigger: "blur" },
             { validator: this.PasswordMatch, trigger: "blur" },
           ],
           username:[

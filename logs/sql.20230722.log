@@ -1,1 +1,0 @@
-2023-07-22T19:20:26.424+0900 SQL 602315d0-2879-11ee-84ac-e9ac81d3b734 [] Executing (default): SELECT `id`, `email`, `password`, `name` FROM `UserModel` AS `User` WHERE `User`.`email` = 'raraa' LIMIT 1;

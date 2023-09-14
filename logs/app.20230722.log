@@ -1,3 +1,0 @@
-2023-07-22T17:57:22.059+0900 LOG                mysql.ts:91  (Object.<anonymous>       ) 00000000-0000-0000-0000-000000000000 [] MySQL Connection has been established successfully.
-2023-07-22T17:57:24.298+0900 LOG                mysql.ts:91  (Object.<anonymous>       ) 00000000-0000-0000-0000-000000000000 [] MySQL Connection has been established successfully.
-2023-07-22T19:20:24.777+0900 LOG                mysql.ts:91  (Object.<anonymous>       ) 00000000-0000-0000-0000-000000000000 [] MySQL Connection has been established successfully.

@@ -2,8 +2,8 @@
   <section id="section2">
     <div class="footer">
       <div class="s2_left">
-        <p class="p1">호재LAB</p>
-        <p class="p2">호재의 공부를 연구하다.</p>
+        <p class="p1">우리LAB</p>
+        <p class="p2">우리들의 개발기록.</p>
         <button @click="GoToGoogle">
           <img src="../../assets/images/home/section2/icon-play.png" width="24px">
           Google Play
@@ -16,7 +16,7 @@
       <div class="s2_right">
         <div class="right_box">
           <strong class="right_p1">주식회사 사업노트</strong>
-          <span><strong>대표</strong>이호재</span>
+          <span><strong>대표</strong>이우리</span>
           <span><strong>사업자등록번호</strong>408-88-02312</span><br/>
           <span><strong>주소</strong> 서울특별시 명일동 155-1 <strong></strong></span>
           <span><strong>E-mail</strong>raraho@naver.com</span>
