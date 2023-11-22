@@ -19,47 +19,36 @@ export default class MemoRepository {
         attributes: ['id', 'content',  'memoId', 'userId'], // 필요한 댓글 속성들만 선택해서 가져옵니다.
       },
       ],
-      
     });
   }
 
   public async update( newMemoData: IMemo): Promise<IMemo | null> {
     const memo = await Memo.findOne({ where: { id: newMemoData.id } });
-
     if (memo) {
       const { id, ...updateData } = newMemoData;
       await memo.update(updateData);
       return memo;
     }
-
     return null;
   }
-
+  
   public async create(memoData: IMemo) {
     return await Memo.create( memoData );
   }
 
-
   public async delete( id: number): Promise<IMemo | null> {
     const memo = await Memo.findOne({ where: { id } } );
-
     if (memo) {
       await memo.destroy();
       return memo;
     }
-
     return null;
   }
-
-
-
+  
     // public async findOne(userId: number, id: number) {
   //   return Memo.findOne({
   //     where: { id, userId },
   //     attributes: ['id', 'name', 'title', 'content', 'userId'],
   //   });
   // }
-
-
-  
 }
