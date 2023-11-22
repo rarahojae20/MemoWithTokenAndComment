@@ -14,7 +14,6 @@ export default class MemoService {
     return result;
   };
 
-
   public refreshMemo = async (newMemoData: IMemo): Promise<IMemo | null> => {
     const result = await new MemoRepository().update( newMemoData );
     return result;
