@@ -6,6 +6,7 @@ import Comment from '../../models/comments.model'; // 댓글 모델을 임포트
 
 
 export default class MemoRepository {
+  
   public async findAll(userId: number): Promise<IMemo[]> {
     return await Memo.findAll({
       where: {
@@ -44,11 +45,4 @@ export default class MemoRepository {
     }
     return null;
   }
-  
-    // public async findOne(userId: number, id: number) {
-  //   return Memo.findOne({
-  //     where: { id, userId },
-  //     attributes: ['id', 'name', 'title', 'content', 'userId'],
-  //   });
-  // }
 }
