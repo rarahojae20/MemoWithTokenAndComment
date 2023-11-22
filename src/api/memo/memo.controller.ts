@@ -18,7 +18,7 @@ export default class MemoController extends BaseController {
       logger.res(httpStatus.OK, response, req); //loger 의 res 함수에는 code, response, request가잇음
       res.status(httpStatus.OK).json(response);
     } catch (error) {
-      console.error('메모못찾음:', error);
+      console.error('메모못찾음', error);
       res.status(httpStatus.INTERNAL_SERVER_ERROR).json({ error: '서버에러' });
     }
   };
@@ -43,8 +43,6 @@ export default class MemoController extends BaseController {
     }
   };
 
-
-
   public refreshMemo = async (req: Request, res: Response): Promise<void> => {
     try {
       const newData: IMemo = this.extractBodyMemo(req.body); //id값을 포함한 name title content가 같이 들어옴
@@ -52,13 +50,11 @@ export default class MemoController extends BaseController {
       const { id } = req.params;
       // const  id  = newData.id 다른방법1
       // newData.id = Number(newData.id); 다른방법2
-
       newData.id = Number(id);
-
       newData.userId = req.user.id;
       const result = await new MemoService().refreshMemo( newData );
       const response = Result.ok(result).toJson();
-
+     
       logger.res(httpStatus.OK, response, req);
       res.status(httpStatus.OK).json(response);
     } catch (error) {
@@ -78,8 +74,8 @@ export default class MemoController extends BaseController {
         res.status(httpStatus.NOT_FOUND).json(response);
         return;
       }
-
       const response = Result.ok(result).toJson();
+     
       logger.res(httpStatus.OK, response, req);
       res.status(httpStatus.OK).json(response);
     } catch (error) {
