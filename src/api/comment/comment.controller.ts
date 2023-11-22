@@ -14,7 +14,6 @@ export default class CommentController {
       const data: IComment = { id, content , memoId , userId};
       const comment = await new CommentService().create(data);
       const response = Result.ok(comment).toJson();
-      
       res.status(httpStatus.CREATED).json(response);
     } catch (error) {
       console.error('Error while creating comment:', error);
@@ -27,7 +26,6 @@ export default class CommentController {
         const { id } = req.params;
         const result = await new CommentService().delete(Number(id));
         const response = Result.ok(result).toJson();
-      
         logger.res(httpStatus.OK, response, req);
         response.message = '삭제되었습니다';
         res.status(httpStatus.OK).json(response);
