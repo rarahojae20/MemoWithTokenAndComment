@@ -11,14 +11,14 @@ export default class MemoController extends BaseController {
  
   public find = async (req: Request, res: Response): Promise<void> => {
     try {
-      const userId = req.user.id;     //미들웨어에서 req.user = user; // 인증된 사용자 정보를 req 객체에 추가합니다 이래서.
+      const userId = req.user.id;     //미들웨어에서 req.user = user; // 인증된 사용자 정보를 req 객체에 추가
       const result = await new MemoService().findAll(userId); 
       const response = Result.ok(result).toJson(); //ok인 경우 status와 result의 결과값까지반환
 
       logger.res(httpStatus.OK, response, req); //loger 의 res 함수에는 code, response, request가잇음
       res.status(httpStatus.OK).json(response);
     } catch (error) {
-      console.error('메모못ㄹ찾음:', error);
+      console.error('메모못찾음:', error);
       res.status(httpStatus.INTERNAL_SERVER_ERROR).json({ error: '서버에러' });
     }
   };
