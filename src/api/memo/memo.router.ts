@@ -15,6 +15,4 @@ router.post('/', authenticateUser, new MemoController().create); // 메모 생�
 router.put('/:id', authenticateUser, new MemoController().refreshMemo); // 메모 수정 (인증 필요)
 router.delete('/:id', authenticateUser,  new MemoController().delete); // 메모 삭제 (인증 필요)
 
-router.get('/', authenticateUser, new MemoController().find); // 메모 조회 (인증 필요)  
-
 router.use('/:id/comments',commentRouter ); 

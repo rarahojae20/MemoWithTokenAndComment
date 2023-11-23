@@ -9,9 +9,9 @@ import { resolve } from 'path';
 export default class CommentController {
   public create = async (req: Request, res: Response): Promise<void> => {
     try {
-      const { id, content, memoId} = req.body;
+      const { content, memoId} = req.body;
       const userId = req.user.id;
-      const data: IComment = { id, content , memoId , userId};
+      const data: IComment = { userId, content , memoId}; //UserId는 memoFind에서 leftJoin으로 댓글까지 찾을수 있음.
       const comment = await new CommentService().create(data);
       const response = Result.ok(comment).toJson();
       res.status(httpStatus.CREATED).json(response);

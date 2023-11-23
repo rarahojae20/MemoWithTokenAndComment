@@ -7,10 +7,6 @@ import jwt from 'jsonwebtoken';
 
 const jwtSecretKey = 'secretekey';
 
-const generateToken = (user: any) => { //login 함수에서 user를 받음
-  return jwt.sign({ id: user.id, email: user.email }, jwtSecretKey, { expiresIn: '1h' }); //id와 email을 받아서 토큰 발급 1시간동안 유효
-};
-
 export default class AuthController {
   public signUp = async (req: Request, res: Response): Promise<void> => {
     try {
@@ -45,3 +41,7 @@ public login = async (req: Request, res: Response): Promise<void> => {
   }
 };
 }
+
+const generateToken = (user: any) => { //login 함수에서 user를 받음
+  return jwt.sign({ id: user.id, email: user.email }, jwtSecretKey, { expiresIn: '1h' }); //id와 email을 받아서 토큰 발급 1시간동안 유효
+};

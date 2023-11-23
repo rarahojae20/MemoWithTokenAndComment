@@ -8,3 +8,5 @@ commentRouter.post('/', authenticateUser, new CommentController().create);
 commentRouter.delete('/:id', authenticateUser, new CommentController().delete);
 
 export default commentRouter;
+
+//memo라우터에서 router.use('/:id/comments',commentRouter ); 

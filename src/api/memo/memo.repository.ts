@@ -17,7 +17,7 @@ export default class MemoRepository {
       {
         model: Comment, // 댓글 모델과의 연결 설정
         as: 'comments', // 댓글 모델과의 관계 이름이 'comments'인 경우 설정
-        attributes: ['id', 'content',  'memoId', 'userId'], // 필요한 댓글 속성들만 선택해서 가져옵니다.
+        attributes: ['id', 'content'], // 필요한 댓글 속성들만 선택해서 가져옵니다.
       },
       ],
     });

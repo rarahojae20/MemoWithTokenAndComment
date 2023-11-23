@@ -1,0 +1,112 @@
+{ timestamp:2023-11-24T02:20:41.265+0900, tid:a0780520-8a24-11ee-97e2-d31c2aec0c4c, payload:{
+  type: 'RES',
+  code: 200,
+  req: '{"type":"REQ","method":"GET","url":"/v1/memos/","tid":"a0780520-8a24-11ee-97e2-d31c2aec0c4c","params":{},"query":{},"body":"{\\"title\\":\\"테스트 메모\\",\\"content\\":\\"테스트 메모 내용\\"}"}',
+  elapsed: undefined,
+  response: '{"code":2000,"message":"OK","result":[]}'
+} }
+{ timestamp:2023-11-24T02:21:39.095+0900, tid:c308e5a0-8a24-11ee-97e2-d31c2aec0c4c, payload:{
+  type: 'RES',
+  code: 200,
+  req: '{"type":"REQ","method":"GET","url":"/v1/memos/","tid":"c308e5a0-8a24-11ee-97e2-d31c2aec0c4c","params":{},"query":{},"body":"{\\"title\\":\\"테스트 메모\\",\\"content\\":\\"테스트 메모 내용\\",\\"asd\\":\\"asd\\"}"}',
+  elapsed: undefined,
+  response: '{"code":2000,"message":"OK","result":[]}'
+} }
+{ timestamp:2023-11-24T02:21:39.838+0900, tid:c37d5250-8a24-11ee-97e2-d31c2aec0c4c, payload:{
+  type: 'RES',
+  code: 200,
+  req: '{"type":"REQ","method":"GET","url":"/v1/memos/","tid":"c37d5250-8a24-11ee-97e2-d31c2aec0c4c","params":{},"query":{},"body":"{\\"title\\":\\"테스트 메모\\",\\"content\\":\\"테스트 메모 내용\\",\\"asd\\":\\"asd\\"}"}',
+  elapsed: undefined,
+  response: '{"code":2000,"message":"OK","result":[]}'
+} }
+{ timestamp:2023-11-24T02:22:01.077+0900, tid:d01ef6d0-8a24-11ee-97e2-d31c2aec0c4c, payload:{
+  type: 'RES',
+  code: 200,
+  req: '{"type":"REQ","method":"GET","url":"/v1/memos/","tid":"d01ef6d0-8a24-11ee-97e2-d31c2aec0c4c","params":{},"query":{},"body":"{\\"name\\":\\"테스트\\",\\"title\\":\\"테스트 메모\\",\\"content\\":\\"테스트 메모 내용\\"}"}',
+  elapsed: undefined,
+  response: '{"code":2000,"message":"OK","result":[]}'
+} }
+{ timestamp:2023-11-24T02:22:15.910+0900, tid:d8f86fc0-8a24-11ee-97e2-d31c2aec0c4c, payload:{
+  type: 'RES',
+  code: 200,
+  req: '{"type":"REQ","method":"POST","url":"/v1/memos/","tid":"d8f86fc0-8a24-11ee-97e2-d31c2aec0c4c","params":{},"query":{},"body":"{\\"name\\":\\"테스트\\",\\"title\\":\\"테스트 메모\\",\\"content\\":\\"테스트 메모 내용\\"}"}',
+  elapsed: undefined,
+  response: '{"code":2000,"message":"OK","result":{"id":243,"name":"테스트","title":"테스트 메모","content":"테스트 메모 내용","userId":379}}'
+} }
+{ timestamp:2023-11-24T02:22:27.317+0900, tid:dfc88420-8a24-11ee-97e2-d31c2aec0c4c, payload:{
+  type: 'RES',
+  code: 200,
+  req: '{"type":"REQ","method":"POST","url":"/v1/memos/","tid":"dfc88420-8a24-11ee-97e2-d31c2aec0c4c","params":{},"query":{},"body":"{\\"name\\":\\"테스트\\",\\"title\\":\\"테스트 메모\\",\\"content\\":\\"테스트 메모 내용\\"}"}',
+  elapsed: undefined,
+  response: '{"code":2000,"message":"OK","result":{"id":244,"name":"테스트","title":"테스트 메모","content":"테스트 메모 내용","userId":379}}'
+} }
+{ timestamp:2023-11-24T02:24:13.678+0900, tid:1f26bec0-8a25-11ee-8167-c91fca0641b1, payload:{
+  type: 'RES',
+  code: 200,
+  req: '{"type":"REQ","method":"GET","url":"/v1/memos/","tid":"1f26bec0-8a25-11ee-8167-c91fca0641b1","params":{},"query":{},"body":"{}"}',
+  elapsed: undefined,
+  response: '{"code":2000,"message":"OK","result":[{"id":243,"name":"테스트","title":"테스트 메모","content":"테스트 메모 내용","userId":379,"comments":[]},{"id":244,"name":"테스트","title":"테스트 메모","content":"테스트 메모 내용","userId":379,"comments":[]}]}'
+} }
+{ timestamp:2023-11-24T02:26:05.491+0900, tid:61d38820-8a25-11ee-8167-c91fca0641b1, payload:{
+  type: 'RES',
+  code: 200,
+  req: '{"type":"REQ","method":"POST","url":"/v1/memos/","tid":"61d38820-8a25-11ee-8167-c91fca0641b1","params":{},"query":{},"body":"{\\"name\\":\\"변경 테스트\\",\\"title\\":\\"변경 테스트 메모\\",\\"content\\":\\"변경 테스트 메모 내용\\"}"}',
+  elapsed: undefined,
+  response: '{"code":2000,"message":"OK","result":{"id":245,"name":"변경 테스트","title":"변경 테스트 메모","content":"변경 테스트 메모 내용","userId":379}}'
+} }
+{ timestamp:2023-11-24T02:26:45.380+0900, tid:798c6090-8a25-11ee-8167-c91fca0641b1, payload:{
+  type: 'RES',
+  code: 200,
+  req: '{"type":"REQ","method":"PUT","url":"/v1/memos/244","tid":"798c6090-8a25-11ee-8167-c91fca0641b1","params":{"id":"244"},"query":{},"body":"{\\"name\\":\\"변경 테스트\\",\\"title\\":\\"변경 테스트 메모\\",\\"content\\":\\"변경 테스트 메모 내용\\"}"}',
+  elapsed: undefined,
+  response: '{"code":2000,"message":"OK","result":{"id":244,"name":"변경 테스트","title":"변경 테스트 메모","content":"변경 테스트 메모 내용","userId":379}}'
+} }
+{ timestamp:2023-11-24T02:26:50.645+0900, tid:7cbe1880-8a25-11ee-8167-c91fca0641b1, payload:{
+  type: 'RES',
+  code: 200,
+  req: '{"type":"REQ","method":"GET","url":"/v1/memos/","tid":"7cbe1880-8a25-11ee-8167-c91fca0641b1","params":{},"query":{},"body":"{}"}',
+  elapsed: undefined,
+  response: '{"code":2000,"message":"OK","result":[{"id":243,"name":"테스트","title":"테스트 메모","content":"테스트 메모 내용","userId":379,"comments":[]},{"id":244,"name":"변경 테스트","title":"변경 테스트 메모","content":"변경 테스트 메모 내용","userId":379,"comments":[]},{"id":245,"name":"변경 테스트","title":"변경 테스트 메모","content":"변경 테스트 메모 내용","userId":379,"comments":[]}]}'
+} }
+{ timestamp:2023-11-24T02:27:40.317+0900, tid:9a55c780-8a25-11ee-8167-c91fca0641b1, payload:{
+  type: 'RES',
+  code: 200,
+  req: '{"type":"REQ","method":"DELETE","url":"/v1/memos/244","tid":"9a55c780-8a25-11ee-8167-c91fca0641b1","params":{"id":"244"},"query":{},"body":"{}"}',
+  elapsed: undefined,
+  response: '{"code":2000,"message":"OK","result":{"id":244,"name":"변경 테스트","title":"변경 테스트 메모","content":"변경 테스트 메모 내용","userId":379}}'
+} }
+{ timestamp:2023-11-24T02:27:46.612+0900, tid:9e1ae5d0-8a25-11ee-8167-c91fca0641b1, payload:{
+  type: 'RES',
+  code: 200,
+  req: '{"type":"REQ","method":"GET","url":"/v1/memos/","tid":"9e1ae5d0-8a25-11ee-8167-c91fca0641b1","params":{},"query":{},"body":"{}"}',
+  elapsed: undefined,
+  response: '{"code":2000,"message":"OK","result":[{"id":243,"name":"테스트","title":"테스트 메모","content":"테스트 메모 내용","userId":379,"comments":[]},{"id":245,"name":"변경 테스트","title":"변경 테스트 메모","content":"변경 테스트 메모 내용","userId":379,"comments":[]}]}'
+} }
+{ timestamp:2023-11-24T02:37:21.401+0900, tid:f4ab2030-8a26-11ee-a6ec-332ea8cbf058, payload:{
+  type: 'RES',
+  code: 200,
+  req: '{"type":"REQ","method":"GET","url":"/v1/memos/","tid":"f4ab2030-8a26-11ee-a6ec-332ea8cbf058","params":{},"query":{},"body":"{}"}',
+  elapsed: undefined,
+  response: '{"code":2000,"message":"OK","result":[{"id":243,"name":"테스트","title":"테스트 메모","content":"테스트 메모 내용","userId":379,"comments":[]},{"id":245,"name":"변경 테스트","title":"변경 테스트 메모","content":"변경 테스트 메모 내용","userId":379,"comments":[]}]}'
+} }
+{ timestamp:2023-11-24T02:45:55.495+0900, tid:271f1f20-8a28-11ee-bb86-5588e81f4d59, payload:{
+  type: 'RES',
+  code: 200,
+  req: '{"type":"REQ","method":"GET","url":"/v1/memos/","tid":"271f1f20-8a28-11ee-bb86-5588e81f4d59","params":{},"query":{},"body":"{}"}',
+  elapsed: undefined,
+  response: '{"code":2000,"message":"OK","result":[{"id":243,"name":"테스트","title":"테스트 메모","content":"테스트 메모 내용","userId":379,"comments":[]},{"id":245,"name":"변경 테스트","title":"변경 테스트 메모","content":"변경 테스트 메모 내용","userId":379,"comments":[{"id":153,"content":"테스트 댓글","memoId":245,"userId":379}]}]}'
+} }
+{ timestamp:2023-11-24T02:46:26.660+0900, tid:39b17480-8a28-11ee-b883-0b4a4ee681cf, payload:{
+  type: 'RES',
+  code: 200,
+  req: '{"type":"REQ","method":"GET","url":"/v1/memos/","tid":"39b17480-8a28-11ee-b883-0b4a4ee681cf","params":{},"query":{},"body":"{}"}',
+  elapsed: undefined,
+  response: '{"code":2000,"message":"OK","result":[{"id":243,"name":"테스트","title":"테스트 메모","content":"테스트 메모 내용","userId":379,"comments":[]},{"id":245,"name":"변경 테스트","title":"변경 테스트 메모","content":"변경 테스트 메모 내용","userId":379,"comments":[{"id":153,"content":"테스트 댓글"}]}]}'
+} }
+{ timestamp:2023-11-24T02:46:27.536+0900, tid:3a39b750-8a28-11ee-b883-0b4a4ee681cf, payload:{
+  type: 'RES',
+  code: 200,
+  req: '{"type":"REQ","method":"GET","url":"/v1/memos/","tid":"3a39b750-8a28-11ee-b883-0b4a4ee681cf","params":{},"query":{},"body":"{}"}',
+  elapsed: undefined,
+  response: '{"code":2000,"message":"OK","result":[{"id":243,"name":"테스트","title":"테스트 메모","content":"테스트 메모 내용","userId":379,"comments":[]},{"id":245,"name":"변경 테스트","title":"변경 테스트 메모","content":"변경 테스트 메모 내용","userId":379,"comments":[{"id":153,"content":"테스트 댓글"}]}]}'
+} }
