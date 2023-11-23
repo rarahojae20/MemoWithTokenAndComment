@@ -19,7 +19,7 @@ export default class MemoService {
     return result;
   };
 
-  public deleteMemo = async (id: number): Promise<IMemo | null> => {
+  public deleteMemo =   async (id: number): Promise<IMemo | null> => {
     const result = await new MemoRepository().delete(id);
     return result;
   };

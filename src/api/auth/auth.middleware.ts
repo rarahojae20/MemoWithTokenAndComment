@@ -4,7 +4,6 @@ import jwt from 'jsonwebtoken';
 import { Request, Response, NextFunction } from 'express';
 import httpStatus from 'http-status';
 import User from '../../models/users.model';
-import bcrypt from 'bcrypt';
 
 const jwtSecretKey = 'secretekey';
 

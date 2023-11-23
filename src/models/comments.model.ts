@@ -22,21 +22,6 @@ export class Comment extends Model<CommentAttributes, CommentCreationAttributes>
   public content!: string;
   public userId!: number;
 
-  // public static associate(models: any) {
-    
-  //   Comment.belongsTo(models.Memo, {
-  //     foreignKey: 'memoId',
-  //     as: 'memo',
-  //   });
-  
-
-  //   Comment.belongsTo(models.User, {
-  //     foreignKey: 'userId',
-  //     as: 'user',
-  //   });
-  // }
-  
-
   public static initModel(sequelize: Sequelize.Sequelize): typeof Comment {
     return Comment.init(
       {

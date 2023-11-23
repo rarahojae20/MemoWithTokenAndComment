@@ -3,7 +3,6 @@ import { Request, Response } from 'express';
 import { Result } from '../../common/result';
 import httpStatus from 'http-status';
 import User from '../../models/users.model';
-import bcrypt from 'bcrypt';
 import jwt from 'jsonwebtoken';
 
 const jwtSecretKey = 'secretekey';

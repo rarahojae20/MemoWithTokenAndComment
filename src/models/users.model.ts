@@ -26,16 +26,6 @@ export class User extends Model<UserAttributes, UserCreationAttributes> implemen
     return bcrypt.compare(password, this.password);
   };
 
-  // public static associate(models: any) {
-  //   // Memo 모델과의 관계 설정
-  //   User.hasMany(models.Memo);
-
-  //   // Comment 모델과의 관계 설정
-  //   User.hasMany(models.Comment, {
-  //   });
-  // }
-
-
   public static initModel(sequelize: Sequelize.Sequelize): typeof User {
     return User.init(
       {
@@ -71,9 +61,5 @@ export class User extends Model<UserAttributes, UserCreationAttributes> implemen
     );
   }
   }
-
-
-
-
 
 export default User; 

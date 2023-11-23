@@ -39,10 +39,7 @@ app.listen(port, async () => {
   logger.init({
     log: true,
     sql: true,
-    mongo: true,
-    net: true,
     error: true,
-    fatal: true,
     console: true, // 콘솔 로깅 활성화
   });
 
