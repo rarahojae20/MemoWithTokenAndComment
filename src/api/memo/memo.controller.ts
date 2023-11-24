@@ -68,6 +68,7 @@ export default class MemoController extends BaseController {
       }
       const response = Result.ok(result).toJson();
       logger.res(httpStatus.OK, response, req);
+      response.message = '삭제되었습니다';
       res.status(httpStatus.OK).json(response);
     } catch (error) {
       console.error('메모삭제실패:', error);

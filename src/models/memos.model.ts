@@ -25,19 +25,6 @@ export class Memo extends Model<MemoAttributes, MemoCreationAttributes> implemen
   public content!: string;
   public userId!: number;
 
-  // public static associate(models: any) {
-  //   Memo.belongsTo(models.User, {
-  //     foreignKey: 'userId',
-  //     as: 'user',
-  //   });
-
-  //    Memo.hasMany(models.Comment, {
-  //     foreignKey: 'memoId',
-  //     as: 'memo',
-  //   });
-
-  // }
-
   public static initModel(sequelize: Sequelize.Sequelize): typeof Memo {
     return Memo.init(
       {
